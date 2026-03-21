@@ -1,0 +1,62 @@
+version: "3.9"
+
+services:
+  # ─────────────────────────────────────────
+  # PostgreSQL
+  # ─────────────────────────────────────────
+  db:
+    image: postgres:16-alpine
+    container_name: carteirinhas-db
+    environment:
+      POSTGRES_DB: carteirinhas_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+      - ./database/seeds.sql:/docker-entrypoint-initdb.d/02-seeds.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d carteirinhas_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  # ─────────────────────────────────────────
+  # Backend (FastAPI)
+  # ─────────────────────────────────────────
+  backend:
+    build: ./backend
+    container_name: carteirinhas-backend
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/carteirinhas_db
+      CORS_ORIGINS: http://localhost:3000,http://frontend:3000
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+
+  # ─────────────────────────────────────────
+  # Frontend (Next.js)
+  # ─────────────────────────────────────────
+  frontend:
+    build: ./frontend
+    container_name: carteirinhas-frontend
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:8000
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/src:/app/src
+      - ./frontend/public:/app/public
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  pgdata:

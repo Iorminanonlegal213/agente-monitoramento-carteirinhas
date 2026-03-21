@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="700" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f0fdfa"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <filter id="shadowSm" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="220" height="700" fill="#0F2027" rx="12"/>
+  <rect x="12" y="0" width="208" height="700" fill="#0F2027"/>
+
+  <!-- Logo -->
+  <circle cx="42" cy="38" r="14" fill="#028090" opacity="0.3"/>
+  <path d="M36 38 L42 30 L48 38 L42 46 Z" fill="#02C39A" opacity="0.9"/>
+  <text x="62" y="34" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#fff">Monitoramento</text>
+  <text x="62" y="48" font-family="Segoe UI, sans-serif" font-size="10" fill="#00A896">Carteirinhas &amp; Requisitos</text>
+
+  <!-- Nav Items -->
+  <rect x="12" y="76" width="196" height="36" rx="8" fill="#028090" opacity="0.2"/>
+  <text x="44" y="99" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#00A896">📊  Dashboard</text>
+
+  <text x="44" y="135" font-family="Segoe UI, sans-serif" font-size="12" fill="#94a3b8">⚠️  Alertas</text>
+  <text x="44" y="167" font-family="Segoe UI, sans-serif" font-size="12" fill="#94a3b8">👥  Funcionários</text>
+  <text x="44" y="199" font-family="Segoe UI, sans-serif" font-size="12" fill="#94a3b8">🏢  Consolidação</text>
+  <text x="44" y="231" font-family="Segoe UI, sans-serif" font-size="12" fill="#94a3b8">📥  Importação</text>
+
+  <!-- Footer sidebar -->
+  <text x="24" y="682" font-family="Segoe UI, sans-serif" font-size="9" fill="#475569">GTIC • TBG • v1.0</text>
+
+  <!-- Main Content Area -->
+  <!-- Header -->
+  <text x="248" y="42" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#1a2332">Dashboard</text>
+  <text x="248" y="62" font-family="Segoe UI, sans-serif" font-size="11" fill="#94a3b8">Monitoramento Preventivo de Carteirinhas e Requisitos</text>
+
+  <!-- Reprocessar button -->
+  <rect x="1060" y="24" width="120" height="34" rx="8" fill="#028090" filter="url(#shadowSm)"/>
+  <text x="1082" y="46" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#fff">↻ Reprocessar</text>
+
+  <!-- ===== STAT CARDS ===== -->
+  <!-- Card 1: Total -->
+  <rect x="248" y="84" width="175" height="90" rx="10" fill="#fff" filter="url(#shadow)" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="264" y="106" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#94a3b8" letter-spacing="0.5">TOTAL DE ALERTAS</text>
+  <text x="264" y="144" font-family="Segoe UI, sans-serif" font-size="32" font-weight="700" fill="#475569">24</text>
+  <rect x="388" y="96" width="24" height="24" rx="6" fill="#f1f5f9"/>
+  <text x="394" y="113" font-family="Segoe UI, sans-serif" font-size="13">📋</text>
+
+  <!-- Card 2: Críticos -->
+  <rect x="435" y="84" width="175" height="90" rx="10" fill="#fff" filter="url(#shadow)" stroke="#fecaca" stroke-width="1"/>
+  <rect x="435" y="84" width="175" height="4" rx="2" fill="#dc2626"/>
+  <text x="451" y="106" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#dc2626" letter-spacing="0.5">CRÍTICOS</text>
+  <text x="451" y="144" font-family="Segoe UI, sans-serif" font-size="32" font-weight="700" fill="#dc2626">6</text>
+  <text x="451" y="162" font-family="Segoe UI, sans-serif" font-size="9" fill="#f87171">Ação imediata</text>
+
+  <!-- Card 3: Altos -->
+  <rect x="622" y="84" width="175" height="90" rx="10" fill="#fff" filter="url(#shadow)" stroke="#fed7aa" stroke-width="1"/>
+  <rect x="622" y="84" width="175" height="4" rx="2" fill="#ea580c"/>
+  <text x="638" y="106" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#ea580c" letter-spacing="0.5">ALTOS</text>
+  <text x="638" y="144" font-family="Segoe UI, sans-serif" font-size="32" font-weight="700" fill="#ea580c">5</text>
+  <text x="638" y="162" font-family="Segoe UI, sans-serif" font-size="9" fill="#fb923c">Até 7 dias</text>
+
+  <!-- Card 4: Médios -->
+  <rect x="809" y="84" width="175" height="90" rx="10" fill="#fff" filter="url(#shadow)" stroke="#fef08a" stroke-width="1"/>
+  <rect x="809" y="84" width="175" height="4" rx="2" fill="#eab308"/>
+  <text x="825" y="106" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#a16207" letter-spacing="0.5">MÉDIOS</text>
+  <text x="825" y="144" font-family="Segoe UI, sans-serif" font-size="32" font-weight="700" fill="#a16207">8</text>
+  <text x="825" y="162" font-family="Segoe UI, sans-serif" font-size="9" fill="#ca8a04">Até 30 dias</text>
+
+  <!-- Card 5: Baixos -->
+  <rect x="996" y="84" width="175" height="90" rx="10" fill="#fff" filter="url(#shadow)" stroke="#bbf7d0" stroke-width="1"/>
+  <rect x="996" y="84" width="175" height="4" rx="2" fill="#22c55e"/>
+  <text x="1012" y="106" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#16a34a" letter-spacing="0.5">BAIXOS</text>
+  <text x="1012" y="144" font-family="Segoe UI, sans-serif" font-size="32" font-weight="700" fill="#16a34a">5</text>
+  <text x="1012" y="162" font-family="Segoe UI, sans-serif" font-size="9" fill="#4ade80">Até 60 dias</text>
+
+  <!-- ===== CHARTS ===== -->
+  <!-- Pie Chart Card -->
+  <rect x="248" y="192" width="350" height="230" rx="10" fill="#fff" filter="url(#shadow)" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="268" y="218" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#475569">Distribuição por Criticidade</text>
+
+  <!-- Pie chart -->
+  <circle cx="390" cy="320" r="70" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- Critico slice -->
+  <path d="M390 250 A70 70 0 0 1 450 290 L390 320 Z" fill="#dc2626"/>
+  <!-- Alto slice -->
+  <path d="M450 290 A70 70 0 0 1 440 380 L390 320 Z" fill="#ea580c"/>
+  <!-- Medio slice -->
+  <path d="M440 380 A70 70 0 0 1 330 360 L390 320 Z" fill="#eab308"/>
+  <!-- Baixo slice -->
+  <path d="M330 360 A70 70 0 0 1 320 280 L390 320 Z" fill="#22c55e"/>
+  <!-- OK slice -->
+  <path d="M320 280 A70 70 0 0 1 390 250 L390 320 Z" fill="#0891b2"/>
+
+  <!-- Pie legend -->
+  <rect x="268" y="395" width="8" height="8" rx="2" fill="#dc2626"/>
+  <text x="280" y="403" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">Crítico: 6</text>
+  <rect x="335" y="395" width="8" height="8" rx="2" fill="#ea580c"/>
+  <text x="347" y="403" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">Alto: 5</text>
+  <rect x="395" y="395" width="8" height="8" rx="2" fill="#eab308"/>
+  <text x="407" y="403" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">Médio: 8</text>
+  <rect x="460" y="395" width="8" height="8" rx="2" fill="#22c55e"/>
+  <text x="472" y="403" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">Baixo: 5</text>
+
+  <!-- Bar Chart Card -->
+  <rect x="614" y="192" width="557" height="230" rx="10" fill="#fff" filter="url(#shadow)" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="634" y="218" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#475569">Alertas por Empresa</text>
+
+  <!-- Bar chart axes -->
+  <line x1="680" y1="240" x2="680" y2="395" stroke="#e2e8f0" stroke-width="1"/>
+  <line x1="680" y1="395" x2="1140" y2="395" stroke="#e2e8f0" stroke-width="1"/>
+  <!-- Grid lines -->
+  <line x1="680" y1="260" x2="1140" y2="260" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="3"/>
+  <line x1="680" y1="300" x2="1140" y2="300" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="3"/>
+  <line x1="680" y1="340" x2="1140" y2="340" stroke="#f1f5f9" stroke-width="1" stroke-dasharray="3"/>
+
+  <!-- Bars: XYZ Serviços -->
+  <rect x="720" y="270" width="50" height="125" rx="4" fill="#0891b2" opacity="0.85"/>
+  <rect x="720" y="340" width="50" height="55" rx="4" fill="#dc2626" opacity="0.85"/>
+  <text x="730" y="410" font-family="Segoe UI, sans-serif" font-size="8" fill="#64748b">XYZ Serv.</text>
+
+  <!-- Bars: ABC Manut -->
+  <rect x="810" y="300" width="50" height="95" rx="4" fill="#0891b2" opacity="0.85"/>
+  <rect x="810" y="360" width="50" height="35" rx="4" fill="#dc2626" opacity="0.85"/>
+  <text x="815" y="410" font-family="Segoe UI, sans-serif" font-size="8" fill="#64748b">ABC Man.</text>
+
+  <!-- Bars: Omega Seg -->
+  <rect x="900" y="310" width="50" height="85" rx="4" fill="#0891b2" opacity="0.85"/>
+  <rect x="900" y="355" width="50" height="40" rx="4" fill="#dc2626" opacity="0.85"/>
+  <text x="903" y="410" font-family="Segoe UI, sans-serif" font-size="8" fill="#64748b">Omega Seg.</text>
+
+  <!-- Bars: Delta Fac -->
+  <rect x="990" y="340" width="50" height="55" rx="4" fill="#0891b2" opacity="0.85"/>
+  <text x="995" y="410" font-family="Segoe UI, sans-serif" font-size="8" fill="#64748b">Delta Fac.</text>
+
+  <!-- Bars: Sol Nasc -->
+  <rect x="1080" y="350" width="50" height="45" rx="4" fill="#0891b2" opacity="0.85"/>
+  <text x="1083" y="410" font-family="Segoe UI, sans-serif" font-size="8" fill="#64748b">Sol Nasc.</text>
+
+  <!-- Bar legend -->
+  <rect x="634" y="395" width="8" height="8" rx="2" fill="#0891b2"/>
+  <text x="646" y="403" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">Total</text>
+  <rect x="634" y="408" width="8" height="8" rx="2" fill="#dc2626"/>
+  <text x="646" y="416" font-family="Segoe UI, sans-serif" font-size="9" fill="#64748b">Críticos</text>
+
+  <!-- ===== ALERTS TABLE ===== -->
+  <rect x="248" y="440" width="923" height="245" rx="10" fill="#fff" filter="url(#shadow)" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="268" y="466" font-family="Segoe UI, sans-serif" font-size="12" font-weight="600" fill="#475569">Alertas Mais Urgentes</text>
+
+  <!-- Table Header -->
+  <rect x="248" y="478" width="923" height="28" fill="#f8fafc"/>
+  <text x="268" y="496" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#94a3b8" letter-spacing="0.5">FUNCIONÁRIO</text>
+  <text x="440" y="496" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#94a3b8" letter-spacing="0.5">EMPRESA</text>
+  <text x="620" y="496" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#94a3b8" letter-spacing="0.5">UNIDADE</text>
+  <text x="760" y="496" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#94a3b8" letter-spacing="0.5">ITEM</text>
+  <text x="940" y="496" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#94a3b8" letter-spacing="0.5">DIAS</text>
+  <text x="1010" y="496" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#94a3b8" letter-spacing="0.5">CRITICIDADE</text>
+
+  <!-- Row 1 -->
+  <line x1="248" y1="530" x2="1171" y2="530" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="268" y="522" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Marcos Pereira</text>
+  <text x="440" y="522" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Omega Segurança</text>
+  <text x="620" y="522" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Terminal Baía</text>
+  <text x="760" y="522" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">NR-10</text>
+  <text x="950" y="522" font-family="Segoe UI, mono" font-size="11" font-weight="700" fill="#dc2626">-20</text>
+  <rect x="1010" y="510" width="58" height="20" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+  <text x="1022" y="524" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#dc2626">Crítica</text>
+
+  <!-- Row 2 -->
+  <line x1="248" y1="562" x2="1171" y2="562" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="268" y="554" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Pedro Almeida</text>
+  <text x="440" y="554" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">XYZ Serviços</text>
+  <text x="620" y="554" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Estação Comprida</text>
+  <text x="760" y="554" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">ASO</text>
+  <text x="950" y="554" font-family="Segoe UI, mono" font-size="11" font-weight="700" fill="#dc2626">-3</text>
+  <rect x="1010" y="542" width="58" height="20" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+  <text x="1022" y="556" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#dc2626">Crítica</text>
+
+  <!-- Row 3 -->
+  <line x1="248" y1="594" x2="1171" y2="594" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="268" y="586" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Lucas Ferreira</text>
+  <text x="440" y="586" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">XYZ Serviços</text>
+  <text x="620" y="586" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Estação Comprida</text>
+  <text x="760" y="586" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">NR-33</text>
+  <text x="955" y="586" font-family="Segoe UI, mono" font-size="11" font-weight="700" fill="#dc2626">0</text>
+  <rect x="1010" y="574" width="58" height="20" rx="10" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+  <text x="1022" y="588" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#dc2626">Crítica</text>
+
+  <!-- Row 4 -->
+  <line x1="248" y1="626" x2="1171" y2="626" stroke="#f1f5f9" stroke-width="1"/>
+  <text x="268" y="618" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1e293b">Maria Oliveira</text>
+  <text x="440" y="618" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">ABC Manutenção</text>
+  <text x="620" y="618" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Terminal Oceânico</text>
+  <text x="760" y="618" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">ASO</text>
+  <text x="955" y="618" font-family="Segoe UI, mono" font-size="11" font-weight="700" fill="#ea580c">3</text>
+  <rect x="1010" y="606" width="48" height="20" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+  <text x="1022" y="620" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#ea580c">Alta</text>
+
+  <!-- Row 5 -->
+  <text x="268" y="650" font-family="Segoe UI, sans-serif" font-size="11" font-weight="600" fill="#1e293b">João da Silva</text>
+  <text x="440" y="650" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">XYZ Serviços</text>
+  <text x="620" y="650" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">Estação Comprida</text>
+  <text x="760" y="650" font-family="Segoe UI, sans-serif" font-size="11" fill="#64748b">NR-10</text>
+  <text x="955" y="650" font-family="Segoe UI, mono" font-size="11" font-weight="700" fill="#ea580c">5</text>
+  <rect x="1010" y="638" width="48" height="20" rx="10" fill="#fff7ed" stroke="#fed7aa" stroke-width="1"/>
+  <text x="1022" y="652" font-family="Segoe UI, sans-serif" font-size="9" font-weight="600" fill="#ea580c">Alta</text>
+
+  <!-- Watermark -->
+  <text x="1100" y="692" font-family="Segoe UI, sans-serif" font-size="9" fill="#cbd5e1" text-anchor="end">DEMO • v1.0</text>
+</svg>
