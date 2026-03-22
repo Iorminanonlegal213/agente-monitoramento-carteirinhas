@@ -1,7 +1,6 @@
 # Agente de Monitoramento Preventivo de Carteirinhas
 
 [![CI - Build & Test](https://github.com/fredericoahb/agente-monitoramento-carteirinhas/actions/workflows/makefile.yml/badge.svg)](https://github.com/fredericoahb/agente-monitoramento-carteirinhas/actions/workflows/makefile.yml)
-
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=flat&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=flat&logo=fastapi&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-14-000000?style=flat&logo=nextdotjs&logoColor=white)
